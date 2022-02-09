@@ -1,0 +1,45 @@
+Docker commands
+
+docker --version
+
+docker-compose --version
+
+for pulling the image  - docker pull image-name
+
+for listing all the images - docker image -a
+
+docker image run - docker run -p 8080:8080 image id
+
+for listing all the running container - docker ps
+
+for listing all the running or stopped container - docker ps -a
+
+for container logs - docker logs containerid
+
+docker container kill, start & stop
+
+docker kill container id
+docker stop container id
+docker start container id
+
+docker exec is used for running the commands in interactive mode
+docker exec -it containerid bash
+
+docker run command will go into intractive mode of image and install software
+docker run -it image-name 
+to install tree folder structure on it - apk add tree
+
+to commit those changes i.e. custom images
+docker commit containerid repo name
+
+to export any container - docker export -output containerid
+
+to import - docker import filename reponame:version
+
+
+for login - docker login/docker login -u -p
+
+for logout - docker logout
+
+
+
